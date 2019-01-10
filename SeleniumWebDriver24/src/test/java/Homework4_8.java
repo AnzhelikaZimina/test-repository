@@ -24,7 +24,7 @@ public class Homework4_8 {
 
         driver.get("http://litecart");
 
-        List<WebElement> product = driver.findElements(By.cssSelector("div.image-wrapper"));
+        List<WebElement> product = driver.findElements(By.cssSelector("li.product"));
         for (int i = 0; i < product.size(); i++) {
             WebElement productItem = product.get(i);
             List<WebElement> productSticker = productItem.findElements(By.cssSelector("div.sticker"));
